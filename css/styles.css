@@ -1,1 +1,516 @@
-/* Your styles go here */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+ /* header */
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+.navbar{
+    box-shadow: 0px 8px 24px  rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    
+}
+
+nav{
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    
+    
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    padding: 25px;
+    
+}
+nav ul li a{
+    height: 40px;
+    margin: 15px;
+    color: #000;
+    font-weight: bold;
+}
+.logo img{
+    height: 60px;
+}
+.navbar .current a{
+    color: #047aed;
+    font-weight: bolder;
+}
+.navbar .current a:hover{
+    border-bottom: 2px #047aed solid;
+    width: 60px;
+}
+.navbar a:hover{
+    color: #047aed;
+    font-weight: bold; 
+    transition: 600ms;
+}
+
+
+
+/*section home*/
+.showcase{
+    position: relative;
+    background-color: #cae5ff;
+    height: 500px;
+    
+    
+}
+
+.showcase h3{
+    color:#047aed;
+    font-size: 20px;
+    padding-bottom: 5px;
+    
+}
+.headings h2{
+    font-size: 70px;
+    padding: 0;
+    padding-bottom: 80px;
+    
+    
+}
+
+.headings{
+    padding-top: 70px;
+    display: flex;
+    flex-direction:column;
+    align-items: center
+}
+.headings a{
+    color: #fff;
+    padding: 10px 30px;
+    background-color: #047aed;
+    color:#fff;
+    font-weight: bold;
+    transition: 200ms;
+    border-radius: 8px;
+}
+.headings a:hover{
+    box-shadow: 0 0 5px black;
+    transform: translateY(-10px);
+}
+
+/* about */
+.about-text{
+    display: flex;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: #047aed;
+    
+}
+ 
+.container .imgbox img{
+    padding-left:  40px;
+    margin-left: 40px auto;
+    width: 80%;
+}
+.content a img{
+    width: 8%;
+    float: left;
+    padding-left: 20px;
+    transition: 200ms;
+}
+.content a img:hover{
+    transform: translateY(-10px);
+}
+.main-about .content p{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6rem;
+    font-weight: 700;
+}
+
+.skills{
+    margin: 40px;
+    padding-top: 30px;
+    padding-left: 20px;
+}
+.skills h2{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #047aed;
+}
+.skills h3{
+    font-weight: bold;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.skills{
+    list-style: none;
+    width: 600px;
+}
+.skills li{
+    margin: 30px 0;
+}
+.bar{
+    background:#353b48;
+    display: block;
+    height: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #2187e7b3;
+}
+.bar span{
+    height: 5px;
+    float: left;
+    background: #2187e7;
+}
+.perc{
+    font-size: 15px;
+}
+.html{
+    width: 90%;
+    animation: html 2s;
+}
+.css{
+    width: 85%;
+    animation: html 2s;
+}
+.javascript{
+    width: 75%;
+    animation: html 2s;
+}
+.photoshop{
+    width: 90%;
+    animation: html 2s;
+}
+.illustrator{
+    width: 75%;
+    animation: html 2s;
+}
+.csharp{
+    width: 65%;
+    animation: html 2s;
+}
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:85%;
+    }
+}
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:75%;
+    }
+}
+@keyframes photoshop{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes illustrator{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width:5%;
+    }
+}@keyframes csharp{
+    0%{
+        width:75%;
+    }
+    100%{
+        width:65%;
+    }
+}
+.head-educ{
+    padding-left: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #047aed;
+}
+.education{
+    display: flex;
+  
+   
+}
+.education-flex{
+    width: 20%;
+    padding-left: 60px;
+}
+.icon-grad img{
+    width: 40px;
+    margin-left: 100px;
+}
+.text, .education-flex{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.text .date{
+    color: #047aed;
+    font-weight: bold;
+
+}
+
+.text h2{
+    padding-bottom: 10px;
+}
+.position{
+    font-weight: bold;
+}
+
+/* service */
+.main-service{
+    margin-bottom: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 440px;
+    border: 1px solid rgb(230, 230, 230);
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px #2e2e2e;
+    background: linear-gradient(to top, #047aed 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box p{
+    font-size: 17px;
+    line-height: 1.9rem;
+    font-weight: 600;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 10px #047aed;
+}
+.box img{
+    width: 40px;
+    height: 40px;
+    margin: 30px;
+}
+.box h2{
+    margin-bottom: 20px;
+    color: #2187e7;
+}
+.box h2:hover{
+    color: #fff;
+}
+ /* contact */
+
+
+.row-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+.contacts{
+    flex-direction: column;
+    margin-bottom: 5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #353b48;
+}
+
+.contacts img{
+    width: 40px;
+    height: 40px;
+    margin-left: 70px;
+}
+.contacts p{
+    text-align: left;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+.card{
+    background-color: #fff;
+    width: 500px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+
+.form-control{
+    margin: 20px 0;
+
+}
+.form-control input[type="text"],
+.form-control input[type="email"],.form-control input[type="text"]{
+    border: 0;
+    border-bottom: 1px solid #333;
+    font-size: 16px;
+}
+.form-control input:focus{
+    outline: none;
+}
+.form-control input[type="text"]{
+    padding: 10px;
+    width: 450px;
+
+}
+
+.form-control input[type="email"]{
+    padding: 10px;
+    width: 450px;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+
+}
+.form-control input[type="text"]{
+    padding: 10px;
+    width: 450px;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+
+}
+input[type="submit"]{
+    padding: 10px;
+    width: 100px;
+    background-color: #047aed;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-family: 'poppins',sans-serif;
+
+}
+input[type="submit"]:hover{
+    color: #000;
+    transition: 0.6s ease;
+    transform:scale(0.9);
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+}
+.form-control textarea{
+    padding: 10px;
+    width: 450px;
+    font-size: 16px;
+    outline: none;
+    font-family: 'poppins',sans-serif;
+    font-weight: bold;
+}
+.gotopbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #047aed;
+    bottom: 40px;
+    right: 20px;
+}
+.gotopbtn img{
+    width: 60%;
+    margin: 9px;
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    margin: 80px;
+    margin-bottom: 20px;
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+    .logo img{
+        width: 70%;
+    }
+    .showcase h3, .headings h2{
+        width: 100%;
+        text-align: center;
+    }
+    .icon-grad img{
+        margin: 20px;
+        padding: 20px;
+    }
+    .about-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .content p{
+        text-align: center;
+        width: 90%;
+    }
+    .content a img{
+        width: 10%;
+    } 
+    .head-educ{
+        margin: 30px;
+    }
+    .skills h2, .head-educ{
+        text-align: center;
+    }   
+    .skills{
+        margin: 0;
+        width: 100%;
+    }
+    .skills li{
+        width: 80%;
+    }
+    
+    .card{
+        width: 100%;
+    }
+    .card .form-control{
+        width: 100%;
+    }
+}
